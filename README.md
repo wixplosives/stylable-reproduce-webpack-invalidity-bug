@@ -1,7 +1,7 @@
 ### Steps to reproduce
 
 1. clone and run `npm i`
-2. run `yarn start`
+2. run `npm start`
 3. app should render with red background
 4. uncomment line 5 in `base.st.css` and save the file, this breaks the syntax
 5. errors should be displayed
