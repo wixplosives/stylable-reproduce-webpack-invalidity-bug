@@ -1,21 +1,9 @@
-# Stylable App
+### Steps to reproduce
 
-[Stylable](https://github.com/wix/stylable)-powered application. Generated using `create-stylable-app`.
-
-## Development
-
-The following scripts are available:
-
-`npm run build` - Build the application in production mode into a folder named `dist`. This folder can be served using any HTTP server. Uses [webpack](https://github.com/webpack/webpack).
-
-`npm run serve` - Statically serve the `dist` folder. Uses [serve](https://github.com/zeit/serve).
-
-`npm start` - Start the application in **development** mode (and open the web browser). Uses [webpack-dev-server](https://github.com/webpack/webpack-dev-server).
-
-`npm run clean` - Delete the `dist` folder. Uses [rimraf](https://github.com/isaacs/rimraf).
-
-`npm run typecheck` - Verify syntactic/semantic correctness. Uses [typescript](https://github.com/microsoft/TypeScript). To read more about Stylable integration with typescript check out [our documentation](https://stylable.io/docs/getting-started/typescript-integration).
-
-`npm run lint` - Verify best practices and find common issues. Uses [eslint](https://github.com/eslint/eslint).
-
-`npm test` - Execute `typecheck` and `lint` scripts.
+1. clone and run `npm i`
+2. run `yarn start`
+3. app should render with red background
+4. uncomment line 5 in `base.st.css` and save the file, this breaks the syntax
+5. errors should be displayed
+6. recomment line 5 (fixing the break) and save the file
+7. change is picked up, but `app.st.css` and `header.st.css` are not updated, and retain their old diagnostics until a change revalidates the file

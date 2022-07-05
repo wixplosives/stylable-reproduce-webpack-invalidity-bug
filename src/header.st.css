@@ -1,0 +1,5 @@
+@st-import [--x] from "./base.st.css";
+
+.root {
+    background-color: var(--x);
+}

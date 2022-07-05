@@ -1,0 +1,12 @@
+/* @st-import Header from './header.st.css'; */
+@st-import [--x] from "./base.st.css";
+
+.root {
+    background-color: var(--x);
+}
+
+.header {
+    /* -st-extends: Header; */
+    margin-top: 10em;
+    text-align: center;
+}
